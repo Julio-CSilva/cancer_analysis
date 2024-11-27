@@ -9,9 +9,22 @@ from sklearn.neural_network import MLPClassifier
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+import requests
 
 # Título
 st.title("Análise de Modelos para Câncer de Mama")
+
+# Usando HTML para diminuir o tamanho da fonte
+st.markdown("""
+    <style>
+        .small-font {
+            font-size: 12px;
+        }
+    </style>
+    <div class="small-font">
+        https://github.com/Julio-CSilva/cancer_analysis/blob/master/40X.parquet
+    </div>
+""", unsafe_allow_html=True)
 
 # Link para a apresentação no Canva
 canva_link = "https://www.canva.com/design/DAGXmeQYkh0/RTABBP1BWupt8Hyk94shZA/view?utm_content=DAGXmeQYkh0&utm_campaign=designshare&utm_medium=link&utm_source=editor"
